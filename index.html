@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bolos</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="header" id="header">
+        <nav>
+            <img src="./logo.png" alt="" class="logo">
+            <ul>
+                <li><a href="#" class="cake" id="models">Bolo Limão</a></li>
+                <li><a href="#" class="cake" id="model3">Bolo Chocolate</a></li>
+                <li><a href="#" class="cake" id="modelx">Bolo Colorido</a></li>
+                <li><a href="#" class="cake" id="modely">Bolo Preto e Branco</a></li>
+                <li><a href="#" class="cake" id="goat">Bolo do GOAT</a></li>
+            </ul>
+            <a href="#" class="btn">bolo de todo tipo e cor</a>
+        </nav>
+        <div class="info">
+            <div>
+                <h2 id="seg">Deliciosa</h2>
+                <p>Massa</p>
+            </div>
+            <div>
+                <h2 id="mph">Muito</h2>
+                <p>Recheio</p>
+            </div>
+            <div>
+                <h2 id="mi">Cada Um Com Sua</h2>
+                <p>Caracteristica</p>
+            </div>
+            <div>
+                <h2 id="goated">Muito</h2>
+                <p>Gostoso</p>
+            </div>
+                <div class="line"></div>
+                <div>
+                    <h2 id="model">Bolos Perfeitos</h2>
+                </div>
+        </div>
+    </div>
+</body>
+<script>
+    let header = document.getElementById('header')
+    let ms = document.getElementById('models')
+    let goat= document.getElementById('goated')
+    let m3 = document.getElementById('model3')
+    let mx = document.getElementById('modelx')
+    let my = document.getElementById('modely')
+    let model = document.getElementById('model')
+    let seg = document.getElementById('seg')
+    let mph = document.getElementById('mph')
+    let mi = document.getElementById('mi')
+
+    ms.onclick = function(){
+        header.style.backgroundImage = "url(./bolo1.jpg)"
+        model.innerHTML = "Bolo Limão"
+        seg.innerHTML = "Cenoura"
+        mph.innerHTML = "Chantily"
+        mi.innerHTML = "Delicioso"
+    }
+    m3.onclick = function(){
+        header.style.backgroundImage = "url(./bolo2.jpg)"
+        model.innerHTML = "Bolo Chocolate"
+        seg.innerHTML = "Chocolate"
+        mph.innerHTML = "Brigadeiro e Morango"
+        mi.innerHTML = "Delicioso"
+    }
+    mx.onclick = function(){
+        header.style.backgroundImage = "url(./bolo3.jpg)"
+        model.innerHTML = "Bolo Arco Íris"
+        seg.innerHTML = "Coco"
+        mph.innerHTML = "Granulado e bombons"
+        mi.innerHTML = "Colorido"
+    }
+    my.onclick = function(){
+        header.style.backgroundImage = "url(./bolo4.jpg)"
+        model.innerHTML = "Preto e Branco"
+        seg.innerHTML = "Pão de ló"
+        mph.innerHTML = "Raspas de Chocolate"
+        mi.innerHTML = "Delicioso"
+    }
+    goat.onclick = function(){
+        header.style.backgroundImage = "url(./bologoat.jpg)"
+        model.innerHTML = "GOAT"
+        seg.innerHTML = "carne"
+        mph.innerHTML = "óleo"
+        mi.innerHTML = "De Bebe"
+    }
+</script>
+</html>
